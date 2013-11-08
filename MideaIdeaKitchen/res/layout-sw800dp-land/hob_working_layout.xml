@@ -1,0 +1,201 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hobworking"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+		<include layout="@layout/hob_layout"/>
+		
+		<LinearLayout
+            android:layout_width="1005dp"
+            android:layout_height="395dp"
+            android:layout_marginLeft="137dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/flicker_bg"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <include
+                android:id="@+id/powerview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                layout="@layout/pad_hob_power_bar" />
+
+            <include
+                android:id="@+id/timeview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                layout="@layout/pad_hob_time_bar" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            
+            <ImageButton
+                android:id="@+id/onbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dip"
+                android:layout_gravity="right|center_vertical"
+                android:background="@null"
+                android:src="@drawable/onbtn" />
+            <ImageButton
+                android:id="@+id/pausebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="100dp"
+                android:background="@null"
+                android:src="@drawable/pausebtn" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lefttitle"
+            android:layout_width="1dip"
+            android:layout_height="1dip"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:paddingTop="3dip"
+            android:text="time"
+            android:textColor="@color/wheel_title_color"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/righttitle"
+            android:layout_width="1dip"
+            android:layout_height="1dip"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:paddingTop="3dip"
+            android:text="time"
+            android:textColor="@color/wheel_title_color"
+            android:textSize="22sp" />
+    </LinearLayout>
+		
+
+    	<!-- 
+		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/flicker_bg">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lefttitle"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="3dip"
+                    android:paddingBottom="3dip"
+                    android:gravity="center"
+                    android:text="POWER"
+                    android:textSize="22sp" 
+                    android:textColor="@color/wheel_title_color"/>
+				<ImageView 
+				    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_gravity="center"
+                	android:src="@drawable/title_line"
+                	/>
+                <TextView
+                    android:id="@+id/righttitle"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="3dip"
+                    android:paddingBottom="3dip"
+                    android:gravity="center"
+                    android:text="TIME"
+                    android:textSize="22sp" 
+                    android:textColor="@color/wheel_title_color"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/settingview"
+                android:layout_width="fill_parent"
+                android:layout_height="210dip"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="4dip"
+                android:orientation="horizontal">
+					
+                <LinearLayout
+                    android:id="@+id/powerview"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="210dip"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/hob_power_wheel_bg_dis"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="30dip"
+                    android:paddingTop="6dp" >
+
+                    <com.midea.iot.wheelview.WheelView
+                        android:id="@+id/powerwheel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/timeview"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="210dip"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/hob_time_wheel_bg_dis"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="6dp">
+
+                    <com.midea.iot.wheelview.WheelView
+                        android:id="@+id/timewheel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" 
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/onbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dip"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:src="@drawable/onbtn" />
+            <ImageButton
+                android:id="@+id/pausebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:src="@drawable/pausebtn" />
+        </LinearLayout>
+    </LinearLayout>
+     -->
+</FrameLayout>

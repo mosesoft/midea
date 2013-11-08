@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<com.midea.iot.pad.CusPadMainProgressBar
+        android:id="@+id/cusPadMainProgressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.7dp"
+        android:layout_marginTop="11.4dp" >
+    </com.midea.iot.pad.CusPadMainProgressBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="2.7dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pad_main_minioven_icon_sel_1" />
+
+        <com.midea.iot.pad.CusPadMainTimeBar
+            android:id="@+id/cusPadMainTimeBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" >
+        </com.midea.iot.pad.CusPadMainTimeBar>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38.7dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/pad_main_time_icon_min" />
+    
+</LinearLayout>

@@ -1,0 +1,274 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listpage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="visible" >
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/list_page" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="6dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/mwoquickbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/pad_slide_bar_mwo_nor" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible" >
+
+                <ImageView
+                    android:id="@+id/mwoquickinfobg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pad_setting_info_frame" />
+
+                <ImageView
+                    android:id="@+id/mwoquickinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pad_setting_list_digi1" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ovenquickbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/pad_slide_bar_oven_nor" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible" >
+
+                <ImageView
+                    android:id="@+id/ovenquickinfobg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pad_setting_info_frame" />
+
+                <ImageView
+                    android:id="@+id/ovenquickinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pad_setting_list_digi1" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/hoodquickbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/pad_slide_bar_hood_nor" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible" >
+
+                <ImageView
+                    android:id="@+id/hoodquickinfobg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pad_setting_info_frame" />
+
+                <ImageView
+                    android:id="@+id/hoodquickinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pad_setting_list_digi1" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/hobquickbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/pad_slide_bar_hob_nor" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible" >
+
+                <ImageView
+                    android:id="@+id/hobquickinfobg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pad_setting_info_frame" />
+
+                <ImageView
+                    android:id="@+id/hobquickinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pad_setting_list_digi1" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/miniovenquickbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/pad_slide_bar_minioven_nor" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="invisible" >
+
+                <ImageView
+                    android:id="@+id/miniovenquickinfobg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pad_setting_info_frame" />
+
+                <ImageView
+                    android:id="@+id/miniovenquickinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pad_setting_list_digi1" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/cleanquickbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/pad_slide_bar_clean_nor" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="invisible" >
+
+                <ImageView
+                    android:id="@+id/cleanquickinfobg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pad_setting_info_frame" />
+
+                <ImageView
+                    android:id="@+id/cleanquickinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pad_setting_list_digi1" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

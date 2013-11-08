@@ -1,0 +1,210 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listpage"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom|left"
+    android:background="@drawable/list_page_bg"
+    android:visibility="visible" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/list_page" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dip"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/mwoquickbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dip"
+                android:layout_marginLeft="0dip"
+                android:layout_marginTop="0dip"
+                android:src="@drawable/quick_nor" />
+
+            <ImageView
+                android:id="@+id/mwoquickinfobg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:src="@drawable/list_info_frame"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/mwoquickinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/info_font_1"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/ovenquickbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dip"
+                android:layout_marginLeft="0dip"
+                android:layout_marginTop="0dip"
+                android:src="@drawable/quick_nor" />
+
+            <ImageView
+                android:id="@+id/ovenquickinfobg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:src="@drawable/list_info_frame"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ovenquickinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/info_font_1"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip" >
+
+            <ImageView
+                android:id="@+id/hoodquickbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dip"
+                android:layout_marginLeft="0dip"
+                android:layout_marginTop="0dip"
+                android:src="@drawable/quick_nor" />
+
+            <ImageView
+                android:id="@+id/hoodquickinfobg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:src="@drawable/list_info_frame"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/hoodquickinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/info_font_1"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/hobquickbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dip"
+                android:layout_marginLeft="0dip"
+                android:layout_marginTop="0dip"
+                android:src="@drawable/quick_nor" />
+
+            <ImageView
+                android:id="@+id/hobquickinfobg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:src="@drawable/list_info_frame"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/hobquickinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/info_font_1"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/miniovenquickbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dip"
+                android:layout_marginLeft="0dip"
+                android:layout_marginTop="0dip"
+                android:src="@drawable/quick_nor" />
+
+            <ImageView
+                android:id="@+id/miniovenquickinfobg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:src="@drawable/list_info_frame"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/miniovenquickinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/info_font_1"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip" >
+
+            <ImageView
+                android:id="@+id/cleanquickbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dip"
+                android:layout_marginLeft="0dip"
+                android:layout_marginTop="0dip"
+                android:src="@drawable/quick_nor" />
+
+            <ImageView
+                android:id="@+id/cleanquickinfobg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:src="@drawable/list_info_frame"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/cleanquickinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/info_font_1"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mwosettings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <include layout="@layout/viewpager_layout2" />
+
+        <LinearLayout
+            android:layout_width="1005dp"
+            android:layout_height="395dp"
+            android:layout_marginLeft="137dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/flicker_bg"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <include
+                    android:id="@+id/timewheel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/pad_setting_time_bar" />
+
+                <include
+                    android:id="@+id/weightwheel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/pad_setting_weight_bar"
+                    android:visibility="visible" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/timeext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" >
+
+                <include
+                    android:id="@+id/tempview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    layout="@layout/pad_setting_tempr_bar"
+                    android:visibility="invisible" />
+
+                <include
+                    android:id="@+id/powerview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    layout="@layout/pad_setting_power_bar"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/startbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="100dp"
+                android:background="@null"
+                android:src="@drawable/startbtn" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lefttitle"
+            android:layout_width="1dip"
+            android:layout_height="1dip"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:paddingTop="3dip"
+            android:text="time"
+            android:textColor="@color/wheel_title_color"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/righttitle"
+            android:layout_width="1dip"
+            android:layout_height="1dip"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:paddingTop="3dip"
+            android:text="time"
+            android:textColor="@color/wheel_title_color"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</FrameLayout>

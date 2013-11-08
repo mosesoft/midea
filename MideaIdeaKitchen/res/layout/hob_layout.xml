@@ -1,0 +1,295 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hob"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/display_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/lefttop"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="4dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginBottom="2dip"
+            android:gravity="center" 
+            android:orientation="vertical"
+            android:background="@null">
+            <LinearLayout
+                
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/lefttopmin1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/lefttopmin2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/lefttopsign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/lefttopsec1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/lefttopsec2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/lefttoppowernum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/lefttoppowerimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/righttop"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dip"
+            android:layout_marginTop="4dip"
+            android:layout_marginRight="4dip"
+            android:layout_marginBottom="2dip"
+            android:gravity="center" 
+            android:orientation="vertical"
+            android:background="@null">
+            <LinearLayout
+                
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/righttopmin1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/righttopmin2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/righttopsign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/righttopsec1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/righttopsec2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/righttoppowernum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/righttoppowerimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/leftbottom"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginBottom="4dip"
+            android:gravity="center" 
+            android:orientation="vertical"
+            android:background="@null">
+            <LinearLayout
+                
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/leftbottommin1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/leftbottommin2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/leftbottomsign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/leftbottomsec1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/leftbottomsec2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/leftbottompowernum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/leftbottompowerimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rightbottom"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dip"
+            android:layout_marginTop="2dip"
+            android:layout_marginRight="4dip"
+            android:layout_marginBottom="4dip"
+            android:gravity="center" 
+            android:orientation="vertical"
+            android:background="@null">
+            <LinearLayout
+                
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/rightbottommin1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/rightbottommin2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/rightbottomsign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/rightbottomsec1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/rightbottomsec2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/rightbottompowernum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+
+                <ImageView
+                    android:id="@+id/rightbottompowerimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/sign_green" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

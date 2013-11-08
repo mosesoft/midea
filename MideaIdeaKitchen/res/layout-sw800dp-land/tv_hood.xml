@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tv_hood_bg_on" >
+    
+	<TextView
+        android:id="@+id/text_hood_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="52dp"
+        android:textColor="#0FBD8F"
+        android:textSize="16sp"
+        android:text="@string/tv_device_mode_hood" />
+
+    <ImageView
+        android:id="@+id/image_hood_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="196dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/tv_hood_mode_1_on" />
+
+    <com.midea.iot.pad.CusTvTimeBar
+        android:id="@+id/cus_hood_time_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="238.7dp"
+        android:layout_marginTop="109.4dp" >
+    </com.midea.iot.pad.CusTvTimeBar>
+
+    <TextView
+        android:id="@+id/text_hood_rpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="195.4dp"
+        android:layout_marginTop="182.7dp"
+        android:textColor="@color/tv_text_mode_on"
+        android:textSize="16sp"
+        android:text="982rpm" />
+    
+    <ImageView 
+        android:id="@+id/image_hood_disconnect_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="118.7dp"
+        android:layout_marginTop="98dp"
+        android:visibility="gone"
+        android:src="@drawable/tv_warn_nor"/>
+    
+</FrameLayout>

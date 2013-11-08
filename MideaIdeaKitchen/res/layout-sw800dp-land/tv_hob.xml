@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tv_hob_bg_on" >
+
+    <TextView
+        android:id="@+id/text_hob_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="52dp"
+        android:textColor="@color/tv_text_mode_on"
+        android:textSize="16sp"
+        android:text="@string/tv_device_mode_hob" />
+
+    <com.midea.iot.pad.CusTvHobInfoBar
+        android:id="@+id/cus_hob_info_bar_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36.7dp"
+        android:layout_marginTop="177.4dp" >
+    </com.midea.iot.pad.CusTvHobInfoBar>
+
+    <ImageView
+        android:id="@+id/image_hob_pos_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="196.7dp"
+        android:layout_marginTop="213.4dp"
+        android:src="@drawable/tv_hob_pos_1_enable" />
+
+    <com.midea.iot.pad.CusTvHobInfoBar
+        android:id="@+id/cus_hob_info_bar_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="238.7dp"
+        android:layout_marginTop="177.4dp" >
+    </com.midea.iot.pad.CusTvHobInfoBar>
+
+    <ImageView
+        android:id="@+id/image_hob_pos_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="214dp"
+        android:layout_marginTop="213.4dp"
+        android:src="@drawable/tv_hob_pos_2_enable" />
+
+    <com.midea.iot.pad.CusTvHobInfoBar
+        android:id="@+id/cus_hob_info_bar_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36.7dp"
+        android:layout_marginTop="244dp" >
+    </com.midea.iot.pad.CusTvHobInfoBar>
+
+    <ImageView
+        android:id="@+id/image_hob_pos_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="196.7dp"
+        android:layout_marginTop="230dp"
+        android:src="@drawable/tv_hob_pos_3_enable" />
+
+    <com.midea.iot.pad.CusTvHobInfoBar
+        android:id="@+id/cus_hob_info_bar_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="238.7dp"
+        android:layout_marginTop="244dp" >
+    </com.midea.iot.pad.CusTvHobInfoBar>
+
+    <ImageView
+        android:id="@+id/image_hob_pos_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="214dp"
+        android:layout_marginTop="230dp"
+        android:src="@drawable/tv_hob_pos_4_enable" />
+    
+    <ImageView 
+        android:id="@+id/image_hob_disconnect_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="118.7dp"
+        android:layout_marginTop="98dp"
+        android:visibility="gone"
+        android:src="@drawable/tv_warn_nor"/>
+    
+    <ImageView 
+        android:id="@+id/image_hob_complete_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="104.7dp"
+        android:layout_marginTop="84.7dp"
+        android:visibility="gone"
+        android:src="@drawable/tv_warn_hob"/>
+
+</FrameLayout>

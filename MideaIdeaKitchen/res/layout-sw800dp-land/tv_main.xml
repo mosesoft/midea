@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tv_main_background"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/btn_switch_tv_pad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1142dp"
+        android:layout_marginTop="8.7dp"
+        android:background="#00000000"
+        android:src="@drawable/switch_tv_pad_btn" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36.7dp"
+        android:layout_marginTop="2.7dp" >
+
+        <include
+            android:id="@+id/tv_microwave_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/tv_wmo" />
+
+        <include
+            android:id="@+id/tv_oven_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            layout="@layout/tv_oven" />
+
+        <include
+            android:id="@+id/tv_hood_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            layout="@layout/tv_hood" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36.7dp"
+        android:layout_marginTop="1dp" >
+
+        <include
+            android:id="@+id/tv_hob_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/tv_hob" />
+
+        <include
+            android:id="@+id/tv_minioven_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            layout="@layout/tv_minioven" />
+
+        <include
+            android:id="@+id/tv_robotclean_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            layout="@layout/tv_clean" />
+    </LinearLayout>
+
+</LinearLayout>

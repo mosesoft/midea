@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tv_oven_bg_on" >
+
+    <TextView
+        android:id="@+id/text_oven_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="52dp"
+        android:textColor="#0FBD8F"
+        android:textSize="16sp"
+        android:text="@string/tv_device_mode_oven" />
+
+    <com.midea.iot.pad.CusTvProgressBar
+        android:id="@+id/cus_oven_progress_bar_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="194.7dp"
+        android:layout_marginTop="92dp" >
+    </com.midea.iot.pad.CusTvProgressBar>
+
+    <ImageView
+        android:id="@+id/image_oven_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="196dp"
+        android:layout_marginTop="123.4dp"
+        android:src="@drawable/tv_oven_mode_1_sel" />
+
+    <com.midea.iot.pad.CusTvTimeBar
+        android:id="@+id/cus_oven_time_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="238.7dp"
+        android:layout_marginTop="140.7dp" >
+    </com.midea.iot.pad.CusTvTimeBar>
+
+    <!-- 
+    <ImageView
+        android:id="@+id/imageView002"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="319.4dp"
+        android:layout_marginTop="140.7dp"
+        android:src="@drawable/tv_info_box_sel" />
+
+    <TextView
+        android:id="@+id/wmo_text_total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="319.4dp"
+        android:layout_marginTop="140.7dp"
+        android:text="10:00" />
+	 -->
+	 
+    <ImageView
+        android:id="@+id/image_oven_setting_tempr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="197.4dp"
+        android:layout_marginTop="196.7dp"
+        android:src="@drawable/tv_icon_setting_sel_on" />
+    
+    <com.midea.iot.pad.CusTvInfoBox 
+        android:id="@+id/cus_oven_info_tempr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="197.4dp"
+        android:layout_marginTop="212.7dp" >
+    </com.midea.iot.pad.CusTvInfoBox>
+
+    <!-- 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="197.4dp"
+        android:layout_marginTop="212.7dp"
+        android:src="@drawable/tv_info_box_sel" />
+
+    <TextView
+        android:id="@+id/wmo_text_actual_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="197.4dp"
+        android:layout_marginTop="212.7dp"
+        android:text="150℃" />
+
+    <TextView
+        android:id="@+id/wmo_text_setting_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="256.7dp"
+        android:layout_marginTop="212.7dp"
+        android:text="200℃" />
+ 	-->
+ 	
+    <ImageView
+        android:id="@+id/image_oven_setting_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="197.4dp"
+        android:layout_marginTop="239.4dp"
+        android:src="@drawable/tv_icon_setting_sel_on" />
+    
+    <com.midea.iot.pad.CusTvInfoBox 
+        android:id="@+id/cus_oven_info_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="194.7dp"
+        android:layout_marginTop="256dp" >
+    </com.midea.iot.pad.CusTvInfoBox>
+
+    <!-- 
+    <ImageView
+        android:id="@+id/imageView002"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="194.7dp"
+        android:layout_marginTop="256dp"
+        android:src="@drawable/tv_info_box_sel" />
+
+    <TextView
+        android:id="@+id/wmo_text_actual_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="194.7dp"
+        android:layout_marginTop="256dp"
+        android:text="1000W" />
+
+    <TextView
+        android:id="@+id/wmo_text_setting_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="256.4dp"
+        android:layout_marginTop="256.4dp"
+        android:text="1000W" />
+     -->
+     
+    <ImageView 
+        android:id="@+id/image_oven_disconnect_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="118.7dp"
+        android:layout_marginTop="98dp"
+        android:visibility="gone"
+        android:src="@drawable/tv_warn_nor"/>
+
+</FrameLayout>

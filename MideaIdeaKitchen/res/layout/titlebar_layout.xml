@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/titlebar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/basictopbar"
+    android:gravity="center" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/basictopline" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/listbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dip"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="3dip"
+            android:background="@null"
+            android:src="@drawable/listbtn" />
+
+        <ImageButton
+            android:id="@+id/homebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:background="@null"
+            android:src="@drawable/homebtn" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="OVEN"
+            android:textColor="@color/dark_gray"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/lightbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="8dip"
+            android:background="@null"
+            android:src="@drawable/light_btn_close" />
+
+        <ImageButton
+            android:id="@+id/lockbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="11dip"
+            android:background="@null"
+            android:src="@drawable/lock_btn_close" />
+    </LinearLayout>
+
+</FrameLayout>

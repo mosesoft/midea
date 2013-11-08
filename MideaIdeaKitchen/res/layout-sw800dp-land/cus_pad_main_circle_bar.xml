@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView 
+        android:id="@+id/image_circle_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pad_main_circle_bg"/>
+    
+    <ImageView 
+        android:id="@+id/image_circle_moving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1.34dp"
+        android:layout_marginTop="1.34dp"
+        android:src="@drawable/pad_main_circle_moving"/>
+
+</FrameLayout>

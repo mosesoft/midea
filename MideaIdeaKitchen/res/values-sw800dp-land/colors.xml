@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tv_main_background">#FF353535</color>
+    <color name="tv_text_mode_on">#FF0FBD8F</color>
+    <color name="tv_text_mode_off">#FF383838</color>
+    <color name="tv_text_off">#FF383838</color>
+    <color name="tv_text_on">#FFE8E8E8</color>
+    <color name="tv_text_setting_on">#FF121212</color>
+    <color name="tv_text_setting_off">#FF121212</color>
+    <color name="tv_text_working_on">#FF0FBD8F</color>
+    <color name="tv_text_working_off">#FF353535</color>
+    <color name="tv_text_time_on">#FF121212</color>
+    <color name="tv_text_time_off">#FF121212</color>
+    
+    <color name="pad_text_main_title_on">#FF6B6B6B</color>
+    <color name="pad_text_main_title_off">#FFC2C2C2</color>
+    <color name="pad_text_main_working">#FF4E4D4D</color>
+</resources>

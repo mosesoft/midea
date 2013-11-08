@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/image_battery_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pad_main_battery_bg" />
+
+        <ImageView
+            android:id="@+id/image_battery_cap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pad_main_battery_cap" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_battery_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="72%"
+        android:textColor="@color/pad_text_main_working"
+        android:textSize="26.7sp" />
+
+</LinearLayout>

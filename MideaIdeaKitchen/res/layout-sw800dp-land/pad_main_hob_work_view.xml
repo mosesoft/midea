@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/image_hob_working_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pad_main_hob_icon_bg" />
+        
+        <ImageView
+            android:id="@+id/image_hob_working_on_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginTop="7.4dp"
+            android:src="@drawable/pad_main_hob_icon_sel" />
+        
+        <ImageView
+            android:id="@+id/image_hob_working_on_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38.7dp"
+            android:layout_marginTop="7.4dp"
+            android:src="@drawable/pad_main_hob_icon_sel" />
+        
+        <ImageView
+            android:id="@+id/image_hob_working_on_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginTop="27.4dp"
+            android:src="@drawable/pad_main_hob_icon_sel" />
+        
+        <ImageView
+            android:id="@+id/image_hob_working_on_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38.7dp"
+            android:layout_marginTop="27.4dp"
+            android:src="@drawable/pad_main_hob_icon_sel" />
+        
+    </FrameLayout>
+
+</LinearLayout>

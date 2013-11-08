@@ -1,0 +1,438 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ovensettings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <include layout="@layout/viewpager_layout2" />
+
+        <LinearLayout
+            android:layout_width="1005dp"
+            android:layout_height="395dp"
+            android:layout_marginLeft="137dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/flicker_bg"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <include
+                android:id="@+id/timewheel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                layout="@layout/pad_setting_time_bar" />
+
+            <include
+                android:id="@+id/tempwheel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                layout="@layout/pad_setting_tempr_bar"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/startbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="100dp"
+                android:background="@null"
+                android:src="@drawable/startbtn" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lefttitle"
+            android:layout_width="1dip"
+            android:layout_height="1dip"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:paddingTop="3dip"
+            android:text="time"
+            android:textColor="@color/wheel_title_color"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/righttitle"
+            android:layout_width="1dip"
+            android:layout_height="1dip"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:paddingTop="3dip"
+            android:text="time"
+            android:textColor="@color/wheel_title_color"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/timebtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:src="@drawable/timebtnnor"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/timeview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/digitalbox"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/digital08" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:src="@drawable/colon" />
+
+                <ImageView
+                    android:id="@+id/min1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/digital05" />
+
+                <ImageView
+                    android:id="@+id/min2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/digital08" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/timesetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/settingicon" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tempLinear"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="3dip"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/tempbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/tempbtnnor" />
+
+            <LinearLayout
+                android:id="@+id/tempview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/digitalbox"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/temp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/digital01" />
+
+                    <ImageView
+                        android:id="@+id/temp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/digital06" />
+
+                    <ImageView
+                        android:id="@+id/temp3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/digital00" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dip"
+                        android:src="@drawable/fickerfont" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="50dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/tempsetting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/settingicon" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+		<include layout="@layout/viewpager_layout"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/timebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/timebtnnor" />
+
+            <LinearLayout
+                android:id="@+id/timeview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/digitalbox"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/digital08" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:src="@drawable/colon" />
+
+                    <ImageView
+                        android:id="@+id/min1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/digital05" />
+
+                    <ImageView
+                        android:id="@+id/min2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/digital08" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="50dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/timesetting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/settingicon" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tempLinear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/tempbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/tempbtnnor" />
+
+            <LinearLayout
+                android:id="@+id/tempview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/digitalbox"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/temp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/digital01" />
+
+                    <ImageView
+                        android:id="@+id/temp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/digital06" />
+
+                    <ImageView
+                        android:id="@+id/temp3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/digital00" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dip"
+                        android:src="@drawable/fickerfont" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="50dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/tempsetting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/settingicon" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/startbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:src="@drawable/startbtn" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/timewheel"
+        android:layout_width="240dip"
+        android:layout_height="210dip"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dip"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/wheel_bg"
+            android:paddingBottom="6dp"
+            android:paddingLeft="25dip"
+            android:paddingTop="6dp" >
+
+            <com.midea.iot.wheelview.WheelView
+                android:id="@+id/hours"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_weight="1"
+            android:background="@drawable/wheel_bg"
+            android:paddingBottom="6dp"
+            android:paddingLeft="20dip"
+            android:paddingTop="6dp" >
+
+            <com.midea.iot.wheelview.WheelView
+                android:id="@+id/mins"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tempwheel"
+        android:layout_width="240dip"
+        android:layout_height="210dip"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dip"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/wheel_bg"
+            android:paddingBottom="6dp"
+            android:paddingRight="8dip"
+            android:paddingTop="6dp" >
+
+            <com.midea.iot.wheelview.WheelView
+                android:id="@+id/temp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>    -->
+
+</FrameLayout>

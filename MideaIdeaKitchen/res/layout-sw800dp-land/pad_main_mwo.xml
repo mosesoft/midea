@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/microwave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.7dp"
+            android:src="@drawable/mwoff" />
+
+        <ImageView
+            android:id="@+id/mwinfobg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:src="@drawable/maininfoframe"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/mwinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="16dip"
+            android:layout_marginTop="13.4dip"
+            android:src="@drawable/digital1"
+            android:visibility="invisible" />
+    </FrameLayout>
+    
+    <TextView
+        android:id="@+id/text_hob_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23.7dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/pad_text_main_title_off"
+        android:textSize="20sp"
+        android:text="@string/tv_device_mode_microwave" />
+
+</LinearLayout>

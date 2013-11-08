@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/image_time_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tv_digital_sel_1" />
+
+    <ImageView
+        android:id="@+id/image_time_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1.4dp"
+        android:src="@drawable/tv_digital_sel_0" />
+
+    <ImageView
+        android:id="@+id/image_time_colon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.7dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/tv_digital_sign_sel" />
+
+    <ImageView
+        android:id="@+id/image_time_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.7dp"
+        android:src="@drawable/tv_digital_sel_0" />
+
+    <ImageView
+        android:id="@+id/image_time_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1.4dp"
+        android:src="@drawable/tv_digital_sel_0" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+    	android:gravity="center"
+        android:layout_marginLeft="3.4dp" >
+
+        <ImageView
+            android:id="@+id/image_info_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/tv_info_box_sel" />
+
+        <TextView
+            android:id="@+id/text_time_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/tv_text_time_on"
+            android:textSize="13.4sp"
+            android:text="10:00" />
+
+    </FrameLayout>
+
+</LinearLayout>

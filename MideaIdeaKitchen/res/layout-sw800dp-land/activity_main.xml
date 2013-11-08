@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34.7dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="366dip"
+            android:src="@drawable/maintitle" />
+
+        <ImageButton
+            android:id="@+id/switch_pad_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="162.7dip"
+            android:layout_marginTop="23.4dip"
+            android:background="#00000000"
+            android:src="@drawable/switch_pad_tv_btn" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105.4dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="82.7dip"
+            android:src="@drawable/pad_main_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <include
+                android:id="@+id/tv_microwave_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="139.4dp"
+                layout="@layout/pad_main_mwo" />
+
+            <include
+                android:id="@+id/tv_oven_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                layout="@layout/pad_main_oven" />
+
+            <include
+                android:id="@+id/tv_microwave_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                layout="@layout/pad_main_hood" />
+
+            <include
+                android:id="@+id/tv_oven_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                layout="@layout/pad_main_hob" />
+
+            <include
+                android:id="@+id/tv_microwave_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                layout="@layout/pad_main_minioven" />
+
+            <include
+                android:id="@+id/tv_oven_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                layout="@layout/pad_main_clean" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal" >
+
+        <com.midea.iot.pad.PadMainMwoWorkingView
+            android:id="@+id/working_device_microwave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" >
+        </com.midea.iot.pad.PadMainMwoWorkingView>
+
+        <ImageView
+            android:id="@+id/working_device_microwave_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:src="@drawable/pad_main_divding_line" 
+            android:visibility="invisible"/>
+
+        <com.midea.iot.pad.PadMainMwoWorkingView
+            android:id="@+id/working_device_oven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp" 
+            android:visibility="invisible">
+        </com.midea.iot.pad.PadMainMwoWorkingView>
+
+        <ImageView
+            android:id="@+id/working_device_oven_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/pad_main_divding_line"
+            android:visibility="invisible" />
+
+        <com.midea.iot.pad.PadMainHoodWorkingView
+            android:id="@+id/working_device_hood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:visibility="invisible" >
+        </com.midea.iot.pad.PadMainHoodWorkingView>
+        
+        <ImageView
+            android:id="@+id/working_device_hood_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:src="@drawable/pad_main_divding_line"
+            android:visibility="invisible" />
+
+        <com.midea.iot.pad.PadMainHobWorkingView
+            android:id="@+id/working_device_hob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="20.7dp"
+            android:visibility="invisible" >
+        </com.midea.iot.pad.PadMainHobWorkingView>
+
+        <ImageView
+            android:id="@+id/working_device_hob_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:src="@drawable/pad_main_divding_line" 
+            android:visibility="invisible"/>
+
+        <com.midea.iot.pad.PadMainMwoWorkingView
+            android:id="@+id/working_device_minioven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:visibility="invisible" >
+        </com.midea.iot.pad.PadMainMwoWorkingView>
+
+
+        <ImageView
+            android:id="@+id/working_device_minioven_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/pad_main_divding_line"
+            android:visibility="invisible" />
+
+        <com.midea.iot.pad.PadMainRobotCleanWorkingView
+            android:id="@+id/working_device_robotclean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:visibility="invisible" >
+        </com.midea.iot.pad.PadMainRobotCleanWorkingView>
+    </LinearLayout>
+
+</LinearLayout>

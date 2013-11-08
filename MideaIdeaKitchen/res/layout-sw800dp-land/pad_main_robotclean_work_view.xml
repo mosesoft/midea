@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.midea.iot.pad.CusPadMainBattery
+        android:id="@+id/battery_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.7dp"
+        android:layout_marginTop="11.4dp" >
+    </com.midea.iot.pad.CusPadMainBattery>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="2.7dp" >
+
+        <ImageView
+            android:id="@+id/image_mode_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/pad_main_clock_icon" />
+
+        <com.midea.iot.pad.CusPadMainTimeBar
+            android:id="@+id/working_time_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp" >
+        </com.midea.iot.pad.CusPadMainTimeBar>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/working_time_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38.7dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/pad_main_time_icon_hour" />
+    
+</LinearLayout>

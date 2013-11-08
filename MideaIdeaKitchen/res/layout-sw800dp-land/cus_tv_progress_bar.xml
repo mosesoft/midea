@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tv_progress_bar_bg_on" />
+
+        <ImageView
+            android:id="@+id/image_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1.34dp"
+            android:layout_marginTop="1.34dp"
+            android:src="@drawable/tv_progress_bar_left"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/image_mid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.34dp"
+            android:layout_marginTop="1.34dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/tv_progress_bar_mid"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/image_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.34dp"
+            android:layout_marginTop="1.34dp"
+            android:src="@drawable/tv_progress_bar_right"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_present"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:text="60%"
+        android:textColor="@color/tv_text_on"
+        android:textSize="16sp" />
+
+</LinearLayout>

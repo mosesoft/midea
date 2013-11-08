@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/basicbg">
+	<include layout="@layout/sidebar_layout"/>
+    <com.midea.iot.myview.MyScrollView
+        android:id="@+id/settingmain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/basicbg"
+            android:orientation="vertical" >
+			<include layout="@layout/titlebar_layout"/>
+
+			<FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <include layout="@layout/mwo_working_layout"/>
+				<include layout="@layout/oven_working_layout"/>
+				<include layout="@layout/hood_working_layout"/>
+				<include layout="@layout/hob_working_layout"/>
+				<include layout="@layout/minioven_working_layout"/>
+				<include layout="@layout/clean_working_layout"/>
+			</FrameLayout>
+
+        </LinearLayout>
+
+    </com.midea.iot.myview.MyScrollView>
+    <include layout="@layout/viewpager_layout3"/>
+</FrameLayout>

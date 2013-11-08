@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ideal KC</string>
+    <string name="action_settings">Settings</string>
+ 
+	<string name="tv_device_mode_robotclean">MK9</string>
+	<string name="tv_device_mode_hob">60C40ME027-G</string>
+	<string name="tv_device_mode_hood">E60TEWOM65</string>
+	<string name="tv_device_mode_minioven">AC25NH</string>
+	<string name="tv_device_mode_oven">65EAE42004</string>
+	<string name="tv_device_mode_microwave">8C</string>
+    
+</resources>

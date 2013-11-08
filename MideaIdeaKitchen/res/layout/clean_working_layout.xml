@@ -1,0 +1,261 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cleanworking"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/workingcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/basicbg"
+        android:orientation="vertical" >
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+            <LinearLayout
+                android:id="@+id/chargingview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/chargingstate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center"
+                    android:text="Charging..."
+                    android:textColor="@color/light_gray"
+                    android:textSize="20sp" />
+		        <FrameLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center" >
+                    <ImageView
+                        android:id="@+id/chargingbg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/battery_charging_bg" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginTop="10dip"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+	                    <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/battery1bg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/battery_bg" />
+                            <ImageView
+                                android:id="@+id/battery1fg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="1dip"
+                                android:layout_gravity="center"
+                                android:src="@drawable/battery_fg" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/percent1"
+                            android:layout_width="150dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip" 
+                            android:text="50%"
+                            android:gravity="center"
+                            android:textColor="@color/power_on_percent_color"
+	                    	android:textSize="28sp"
+	                    	android:maxLines="2"/>
+                    </LinearLayout>
+
+		        </FrameLayout>
+            </LinearLayout>
+
+	        <FrameLayout
+	            android:id="@+id/autoview"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="30dip"
+	            android:layout_marginBottom="30dip"
+	            android:layout_gravity="center" >
+	            <ImageView
+	                android:id="@+id/processcircle"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:src="@drawable/stop_process_circle" />
+	
+	            <ImageView
+	                android:id="@+id/movingcircle"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:src="@drawable/cooking_moving_circle" />
+	
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:layout_marginBottom="10dip"
+	                android:orientation="vertical" >
+	                <TextView
+	                    android:id="@+id/state"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center"
+	                    android:layout_marginBottom="10dip"
+	                    android:gravity="center"
+	                    android:text="Working..."
+	                    android:textColor="@color/light_gray"
+	                    android:textSize="22sp" />
+	
+	
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center_horizontal"
+	                    android:layout_marginBottom="10dip"
+	                    android:layout_marginTop="10dip"
+	                    android:gravity="center"
+	                    android:orientation="horizontal" >
+	
+	                    <ImageView
+	                        android:id="@+id/min1"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/disable_0" />
+	
+	                    <ImageView
+	                        android:id="@+id/min2"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="5dip"
+	                        android:layout_marginRight="5dip"
+	                        android:src="@drawable/disable_0" />
+	                    <ImageView
+	                        android:id="@+id/sign"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="5dip"
+	                        android:layout_marginRight="5dip"
+	                        android:src="@drawable/disable_sign" />
+	                    <ImageView
+	                        android:id="@+id/sec1"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/disable_0" />
+	
+	                    <ImageView
+	                        android:id="@+id/sec2"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="5dip"
+	                        android:layout_marginRight="5dip"
+	                        android:src="@drawable/disable_0" />
+	                </LinearLayout>
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center_horizontal"
+	                    android:layout_marginTop="10dip"
+	                    android:gravity="center"
+	                    android:orientation="horizontal" >
+	
+	                    <TextView
+	                        android:id="@+id/percent2"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center_vertical"
+	                        android:text="50%"
+                            android:textColor="@color/power_off_percent_color"
+	                    	android:textSize="26sp"
+	                        />
+	                    <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/battery2bg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/battery_bg" />
+                            <ImageView
+                                android:id="@+id/battery2fg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="1dip"
+                                android:layout_gravity="center"
+                                android:src="@drawable/battery_fg" />
+                        </FrameLayout>
+
+	                </LinearLayout>
+	            </LinearLayout>
+	            <com.midea.iot.myview.MyScrollView
+                    android:id="@+id/animicon"
+                    android:layout_width="300dip"
+                    android:layout_height="300dip"
+                    android:layout_gravity="right|bottom">
+
+                    <ImageView
+                        android:id="@+id/cleanicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:src="@drawable/clean_icon1" />
+                </com.midea.iot.myview.MyScrollView>
+	            
+	        </FrameLayout>
+
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/func_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/func_btn_disable"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/auto_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/auto_btn_nor" />
+            <ImageView
+                android:id="@+id/battery_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/battery_btn_nor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:src="@drawable/powerbtn" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

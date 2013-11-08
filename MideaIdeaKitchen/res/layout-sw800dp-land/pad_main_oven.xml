@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/oven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.7dp"
+            android:src="@drawable/ovenoff" />
+
+        <ImageView
+            android:id="@+id/oveninfobg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:src="@drawable/maininfoframe"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/oveninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="16dip"
+            android:layout_marginTop="13.4dip"
+            android:src="@drawable/digital1"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_oven_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="23.7dp"
+        android:text="@string/tv_device_mode_oven"
+        android:textColor="@color/pad_text_main_title_off"
+        android:textSize="20sp" />
+
+</LinearLayout>

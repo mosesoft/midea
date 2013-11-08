@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/image_clean_battery_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tv_clean_battery_bg_on" />
+
+        <ImageView
+            android:id="@+id/image_clean_battery_cap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+        	android:layout_marginTop="4dp"
+        	android:scaleType="fitXY"
+            android:src="@drawable/tv_clean_slider_line_on" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_battery_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/tv_text_on"
+        android:textSize="16sp"
+        android:text="60%" />
+
+</LinearLayout>
